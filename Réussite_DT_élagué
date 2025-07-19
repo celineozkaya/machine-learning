@@ -1,0 +1,17 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<Fedu &le; 0.5<br/>gini = 0.438<br/>samples = 519<br/>value = [168, 351]<br/>class = Réussite>, fillcolor="#98ccf1"] ;
+1 [label=<Medu &le; 0.5<br/>gini = 0.345<br/>samples = 437<br/>value = [97, 340]<br/>class = Réussite>, fillcolor="#71b9ec"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<gini = 0.487<br/>samples = 31<br/>value = [18, 13]<br/>class = Non-réussite>, fillcolor="#f8dcc8"] ;
+1 -> 2 ;
+3 [label=<age &le; 1.5<br/>gini = 0.313<br/>samples = 406<br/>value = [79, 327]<br/>class = Réussite>, fillcolor="#69b5eb"] ;
+1 -> 3 ;
+4 [label=<gini = 0.462<br/>samples = 102<br/>value = [37, 65]<br/>class = Réussite>, fillcolor="#aad5f4"] ;
+3 -> 4 ;
+5 [label=<gini = 0.238<br/>samples = 304<br/>value = [42.0, 262.0]<br/>class = Réussite>, fillcolor="#59ade9"] ;
+3 -> 5 ;
+6 [label=<gini = 0.232<br/>samples = 82<br/>value = [71, 11]<br/>class = Non-réussite>, fillcolor="#e99558"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
